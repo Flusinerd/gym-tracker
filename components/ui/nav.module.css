@@ -1,0 +1,20 @@
+.nav {
+  @apply w-64 border-l border-slate-200 shadow-md h-screen fixed right-0 top-16 bottom-0 max-w-0;
+  transition: max-width 0.3s ease-in-out;
+  @apply bg-white bg-opacity-75;
+  /* Blur the bg */
+  @apply backdrop-blur-sm;
+  @apply z-10;
+}
+
+.nav.open {
+  @apply max-w-full
+}
+
+.nav.closed {
+  @apply max-w-0
+}
+
+.linkActive {
+  @apply font-bold
+}
